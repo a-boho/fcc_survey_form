@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F.C.C. Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" 
+              class="text-center">Bitcoin Survey Form</h1>
+          <p 
+             id="description"                      
+             class="description text-center">
+            Thank you for helping me understand more about the public's knowledge about Bitcoin.
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label"
+                   for="name">
+              First Name
+            </label>
+            <input
+                   type="text"
+                   name="name"
+                   id="name"
+                   class="form-control"
+                   placeholder="Enter your name"
+                   required
+                   />
+          </div>
+          <div class="form-group">
+            <label id="email-label"
+                   for="email">
+              Email Address
+            </label>
+            <input
+                   type="email"
+                   name="email"
+                   id="email"
+                   class="form-control"
+                   placeholder="Enter your Email"
+                   required
+                   />
+          </div>
+          <div class="form-group">
+            <label id="number-label"
+                   for="number">
+              Age
+              <span class="clue">
+                (optional)
+              </span>
+            </label>
+            <input
+                   type="number"
+                   name="age"
+                   id="number"
+                   min="10"
+                   max="99"
+                   class="form-control"
+                   placeholder="Age"
+                   />
+          </div>
+          <div class="form-group">
+            <p>
+              Which option best describes your current role?</p>
+            <select id="dropdown"
+                    name="role"
+                    class="form-control"
+                    required>
+              <option 
+                     disabled selected value>Select current role</option>
+              <option
+                     value="student">
+                Student
+              </option>
+              <option 
+                     value="job">
+                Full Time Job
+              </option>
+              <option
+                     value="learner">
+                Full Time Learner
+              </option>
+              <option
+                     value="preferNo">
+                Prefer not to say
+              </option>
+              <option
+                     value="other">
+                Other
+              </option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <p>
+               Would you recommend Bitcoin to a friend?
+            </p>
+            <label>
+              <input
+                     name="user-recommend"
+                     value="definitely"
+                     type="radio"
+                     class="input-radio"
+                     checked
+                     />
+              Definitely
+            </label>
+            <label>
+              <input
+                     name="user-recommend"
+                     value="maybe"
+                     type="radio"
+                     class="input-radio"
+                     />
+              Maybe
+            </label>
+            <label>
+              <input
+                     name="user-recommend"
+                     value="not-sure"
+                     type="radio"
+                     class="input-radio"
+                     />
+              Not sure
+            </label>
+          </div>
+          
+          <div class="form-group">
+            <p>
+              What is your favorite feature of Bitcoin?
+            </p>
+            <select 
+                    id="most-like"
+                    name="mostLike"
+                    class="form-control"
+                    required
+                    >
+              <option disable selected value>
+                Select an option
+              </option>
+                <option
+                        value="permissionlessness">
+                  Permissionlessness
+              </option>
+              <option
+                        value="stateIndependent">
+                  State Independent
+              </option>
+              <option
+                        value="unstoppable">
+                  Unstoppable
+              </option>
+              <option
+                        value="trustless">
+                  Trustless
+              </option>
+              <option
+                        value="decentralized">
+                  Decentralized
+              </option>
+              <option
+                        value="openSource">
+                  Open Source
+              </option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <p>
+              What would you like to see improved?
+              <span class="clue">
+                (Check all that apply)
+              </span>
+            </p>
+            
+            <label>
+              <input
+                     name="prefer"
+                     value="speed"
+                     type="checkbox"
+                     class="input-checkbox"
+                     />
+              Speed
+            </label>
+            <label>
+              <input
+                     name="prefer"
+                     value="fees"
+                     type="checkbox"
+                     class="input-checkbox"
+                     />
+              Fees
+            </label>
+            <label>
+              <input
+                     name="prefer"
+                     value="wallets"
+                     type="checkbox"
+                     class="input-checkbox"
+                     />
+              Wallets
+            </label>
+            <label>
+              <input
+                     name="prefer"
+                     value="user-interface"
+                     type="checkbox"
+                     class="input-checkbox"
+                     />
+              User Interface
+            </label>
+            <label>
+              <input
+                     name="prefer"
+                     value="community"
+                     type="checkbox"
+                     class="input-checkbox"
+                     />
+              Community
+            </label>
+            <label>
+              <input
+                     name="prefer"
+                     value="easy-of-entry"
+                     type="checkbox"
+                     class="input-checkbox"
+                     />
+              Ease of Entry
+            </label>
+            <label>
+              <input
+                     name="prefer"
+                     value="exchanges"
+                     type="checkbox"
+                     class="input-checkbox"
+                     />
+              Exchanges
+            </label>
+          </div>
+          
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+                      id="comments"
+                      class="input-textarea"
+                      name="comment"
+                      placeholder="Enter your comment here..."
+                      >
+            </textarea>
+          </div>
+          
+          <div class="form-group">
+            <button 
+                   type="submit"
+                   id="submit"
+                   class="submit-button"
+                   >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
